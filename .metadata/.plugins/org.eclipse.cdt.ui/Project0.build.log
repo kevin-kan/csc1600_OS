@@ -1,0 +1,15 @@
+17:52:53 **** Incremental Build of configuration Debug for project Project0 ****
+make all 
+Building file: ../src/Project0.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Project0.d" -MT"src/Project0.o" -o "src/Project0.o" "../src/Project0.cpp"
+Finished building: ../src/Project0.cpp
+ 
+Building target: Project0.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Project0.exe"  ./src/Project0.o   
+Finished building target: Project0.exe
+ 
+
+17:52:57 Build Finished (took 3s.767ms)
+
