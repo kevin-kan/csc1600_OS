@@ -1,0 +1,14 @@
+/*
+ * usefulVaritables.h
+ *
+ *  Created on: Oct 24, 2016
+ *      Author: Kevin
+ */
+
+#ifndef USEFULVARIABLES_H_
+#define USEFULVARIABLES_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#endif /* USEFULVARIABLES_H_ */

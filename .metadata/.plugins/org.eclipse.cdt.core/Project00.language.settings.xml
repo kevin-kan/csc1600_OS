@@ -4,7 +4,7 @@
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="org.eclipse.cdt.managedbuilder.core.GCCBuiltinSpecsDetectorCygwin">
 				<language id="org.eclipse.cdt.core.gcc">
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="includePath" name="C:/cygwin64/usr/include">
@@ -280,7 +280,7 @@
 					<entry kind="macro" name="__GCC_IEC_559_COMPLEX" value="2">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GNUC_MINOR__" value="4">
+					<entry kind="macro" name="__GNUC_MINOR__" value="3">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="0">
@@ -679,7 +679,7 @@
 					<entry kind="macro" name="__USER_LABEL_PREFIX__" value="">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__VERSION__" value="&quot;5.4.0&quot;">
+					<entry kind="macro" name="__VERSION__" value="&quot;5.3.0&quot;">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__WCHAR_MAX__" value="0xffff">
@@ -768,16 +768,16 @@
 					</entry>
 				</language>
 				<language id="org.eclipse.cdt.core.g++">
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include/c++">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include/c++/x86_64-pc-cygwin">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include/c++/backward">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="includePath" name="C:/cygwin64/usr/include">
@@ -1068,7 +1068,7 @@
 					<entry kind="macro" name="__GNUC_GNU_INLINE__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GNUC_MINOR__" value="4">
+					<entry kind="macro" name="__GNUC_MINOR__" value="3">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="0">
@@ -1464,7 +1464,7 @@
 					<entry kind="macro" name="__USER_LABEL_PREFIX__" value="">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__VERSION__" value="&quot;5.4.0&quot;">
+					<entry kind="macro" name="__VERSION__" value="&quot;5.3.0&quot;">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__WCHAR_MAX__" value="0xffff">
@@ -1577,7 +1577,7 @@
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="org.eclipse.cdt.managedbuilder.core.GCCBuiltinSpecsDetectorCygwin">
 				<language id="org.eclipse.cdt.core.gcc">
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="includePath" name="C:/cygwin64/usr/include">
@@ -1853,7 +1853,7 @@
 					<entry kind="macro" name="__GCC_IEC_559_COMPLEX" value="2">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GNUC_MINOR__" value="4">
+					<entry kind="macro" name="__GNUC_MINOR__" value="3">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="0">
@@ -2252,7 +2252,7 @@
 					<entry kind="macro" name="__USER_LABEL_PREFIX__" value="">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__VERSION__" value="&quot;5.4.0&quot;">
+					<entry kind="macro" name="__VERSION__" value="&quot;5.3.0&quot;">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__WCHAR_MAX__" value="0xffff">
@@ -2341,16 +2341,16 @@
 					</entry>
 				</language>
 				<language id="org.eclipse.cdt.core.g++">
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include/c++">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/x86_64-pc-cygwin">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include/c++/x86_64-pc-cygwin">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/c++/backward">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include/c++/backward">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include">
+					<entry kind="includePath" name="C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.3.0/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="includePath" name="C:/cygwin64/usr/include">
@@ -2641,7 +2641,7 @@
 					<entry kind="macro" name="__GNUC_GNU_INLINE__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__GNUC_MINOR__" value="4">
+					<entry kind="macro" name="__GNUC_MINOR__" value="3">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="0">
@@ -3037,7 +3037,7 @@
 					<entry kind="macro" name="__USER_LABEL_PREFIX__" value="">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__VERSION__" value="&quot;5.4.0&quot;">
+					<entry kind="macro" name="__VERSION__" value="&quot;5.3.0&quot;">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__WCHAR_MAX__" value="0xffff">

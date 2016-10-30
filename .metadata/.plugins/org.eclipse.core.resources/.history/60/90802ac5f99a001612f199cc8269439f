@@ -1,0 +1,21 @@
+/*
+ * dataFiller.c
+ *
+ *  Created on: Oct 20, 2016
+ *      Author: Kevin Kan
+ */
+
+#include "usefulVariables.h"
+
+void *dataFiller(void * sourceIn){
+	sourceData *source = (sourceData*) sourceIn;
+
+	FILE* myfile = fopen(source-> sourceFileName, "r");
+
+	for (int i = 0; i< source -> numObs; i++){
+		fscanf(myfile, "%lf", source -> values++);
+		if (i < 10) printf("values[%i] = %lf\n", i, *source->values);
+	}
+	fclose(myfile);
+	return 0;
+}

@@ -1,6 +1,48 @@
-18:04:20 **** Incremental Build of configuration Debug for project Project01 ****
+17:58:31 **** Incremental Build of configuration Debug for project Project02 ****
 make all 
-make: Nothing to be done for 'all'.
-18:04:22 **** Incremental Build of configuration Debug for project Project01 ****
+Building file: ../src/SuperviseThreads.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SuperviseThreads.d" -MT"src/SuperviseThreads.o" -o "src/SuperviseThreads.o" "../src/SuperviseThreads.c"
+Finished building: ../src/SuperviseThreads.c
+ 
+Building target: Project02.exe
+Invoking: Cygwin C Linker
+gcc  -o "Project02.exe"  ./src/Project02.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o   
+Finished building target: Project02.exe
+ 
+17:58:34 **** Incremental Build of configuration Debug for project Project02 ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/Project02.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Project02.d" -MT"src/Project02.o" -o "src/Project02.o" "../src/Project02.c"
+Finished building: ../src/Project02.c
+ 
+Building target: Project02.exe
+Invoking: Cygwin C Linker
+gcc  -o "Project02.exe"  ./src/Project02.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o   
+Finished building target: Project02.exe
+ 
+17:58:46 **** Incremental Build of configuration Debug for project Project02 ****
+make all 
+Building file: ../src/dataFiller.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataFiller.d" -MT"src/dataFiller.o" -o "src/dataFiller.o" "../src/dataFiller.c"
+Finished building: ../src/dataFiller.c
+ 
+Building target: Project02.exe
+Invoking: Cygwin C Linker
+gcc  -o "Project02.exe"  ./src/Project02.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o   
+Finished building target: Project02.exe
+ 
+17:59:02 **** Incremental Build of configuration Debug for project Project02 ****
+make all 
+Building file: ../src/SuperviseThreads.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SuperviseThreads.d" -MT"src/SuperviseThreads.o" -o "src/SuperviseThreads.o" "../src/SuperviseThreads.c"
+Finished building: ../src/SuperviseThreads.c
+ 
+Building target: Project02.exe
+Invoking: Cygwin C Linker
+gcc  -o "Project02.exe"  ./src/Project02.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o   
+Finished building target: Project02.exe
+ 

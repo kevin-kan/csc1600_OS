@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : Project02.c
+ Author      : Kevin Kan
+ Version     : 1.0
+ Copyright   : 2016
+ Description : Threads
+ ============================================================================
+ */
+
+
+#include "usefulVariables.h"
+
+int main() {
+	setbuf(stdout, NULL);
+
+	int numObs = 100;
+	int numRegions = 50;
+
+	SuperviseThreads(numObs, numRegions, false);
+
+	return 0;
+}

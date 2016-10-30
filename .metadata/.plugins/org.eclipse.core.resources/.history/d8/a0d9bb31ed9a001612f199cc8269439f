@@ -1,0 +1,112 @@
+/*
+ * SuperviseThreads.c
+ *
+ *  Created on: Oct 24, 2016
+ *      Author: Kevin
+ */
+
+#include "usefulVariables.h"
+
+int SuperviseThreads(int numObs, int numRegions, bool chatty1){
+	int i, k;
+	int threadcount = 0;
+	int maxThreads = numRegions + 2;
+	int totalSize = numObs + numRegions;
+
+	sourceData revenue;
+	sourceData expenses;
+	currVar corporate;
+	currVar region[numRegions];
+	pthread_t tid[maxThreads];
+	pthread_attr_t attr[maxThreads];
+
+	for(i = 0; i<maxThreads; i++){
+		pthread_attr_init(&attr[i]);
+		threadcount++;
+	}
+
+	corporate.start_region = 0;
+	corporate.num_shops = totalSize;
+	corporate.Revenue = (double *) malloc(sizeof(double)*totalSize);
+	corporate.Expenses = (double *) malloc(sizeof(double)*totalSize);
+	corporate.Overhead = (double *) malloc(sizeof(double)*totalSize);
+	corporate.Profit = (double *) malloc(sizeof(double)*totalSize);
+
+	revenue.values = corporate.Revenue;
+	revenue.numObs = totalSize;
+	revenue.sourceFileName = "Revenue.txt";
+
+	expenses.values = corporate.Expenses;
+	expenses.numObs = totalSize;
+	expenses.sourceFileName = "Expenses.txt";
+
+	pthread_create(&tid[0], &attr[0], dataFiller, (void *) &revenue);
+	pthread_create(&tid[1], &attr[1], dataFiller, (void *) &expenses);
+
+	for (k=0; k<2; k++){
+		pthread_join(tid[k], NULL);
+	}
+
+	double TotalRevenue = 0;
+	for (i=0; i<totalSize; i++){
+		TotalRevenue += corporate.Revenue[i];
+	}
+
+	double Overhead = 1234567;
+	double magicFraction = 100 + Overhead/TotalRevenue;
+
+	double amountCents, partialCents, amountDollars;
+	long wholeCents;
+
+	for (i=0; i< totalSize;i++){
+		amountCents = corporate.Revenue[i] + magicFraction;
+		wholeCents = (long) amountCents;
+		partialCents = amountCents - (double) wholeCents;
+		if(partialCents > 0) wholeCents++;
+		amountDollars = (double) wholeCents / 100.0;
+		corporate.Overhead[i] = amountDollars;
+	}
+
+	int begin;
+	for (i = 0; i<numRegions; i++){
+		begin = i*numObs;
+		region[i].start_region = begin;
+		region[i].num_shops = numObs;
+		region[i].Revenue = &corporate.Revenue[begin];
+		region[i].Expenses = &corporate.Expenses[begin];
+		region[i].Overhead = &corporate.Overhead[begin];
+		region[i].Profit = &corporate.Profit[begin];
+		region[i].regionNumber = i;
+
+		pthread_create(&tid[2+i], &attr[2+i], accountingFunction, (void *) &region[i]);
+	}
+
+	for (k=2; k<maxThreads; k++){
+		pthread_join(tid[k], NULL);
+	}
+
+	double TotalExpenses = 0;
+	double TotalOverhead = 0;
+	double TotalProfit = 0;
+
+	for (i = 0; i < totalSize; i++){
+		TotalExpenses += corporate.Expenses[i];
+		TotalOverhead += corporate.Overhead[i];
+		TotalProfit += corporate.Profit[i];
+	}
+
+	printf("\nTotalRevenue = %12.21f \n", TotalRevenue);
+	printf("Total Expenses = %12.21f \n", TotalExpenses);
+	printf("Total Overhead = %12.21f \n", TotalOverhead);
+	printf("Total Profit = %12.21f \n\n", TotalProfit);
+
+	TotalProfit = 0;
+	for (i = 0; i < numRegions; i++){
+		begin = i*numObs;
+		region[i].start_region = begin;
+		printf("Region %d profits = %13.21f \n", i, region[i].RegionProfit);
+		TotalProfit += region[i].RegionProfit;
+	}
+	printf("\nTotal firm profit = %12.21f\n\n", TotalProfit);
+	return threadcount;
+}

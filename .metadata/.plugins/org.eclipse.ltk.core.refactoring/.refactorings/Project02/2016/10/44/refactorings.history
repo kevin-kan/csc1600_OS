@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Project02/src/usefulVaritables.h&apos; to &apos;usefulVariables.h&apos;" description="Rename resource &apos;usefulVaritables.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/usefulVaritables.h" name="usefulVariables.h" stamp="1477367829181" updateReferences="true"/>
+</session>
