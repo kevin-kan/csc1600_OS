@@ -1,0 +1,59 @@
+==> usefulVariables.h <==
+/*
+ * usefulVaritables.h
+ * Given by project assignment
+ *  Created on: Oct 20, 2016
+ *      Author: Kevin Kan
+ */
+
+#ifndef USEFULVARIABLES_H_
+#define USEFULVARIABLES_H_
+
+
+==> accountingFunction.c <==
+/*
+ * accountingFunction.c
+ * Calculates Total profit
+ *  Created on: Oct 20, 2016
+ *      Author: Kevin Kan
+ */
+#include "usefulVariables.h"
+
+void *accountingFunction(void *dataIn){
+	currVar *data = (currVar *) dataIn;
+
+==> dataFiller.c <==
+/*
+ * dataFiller.c
+ *
+ *  Created on: Oct 20, 2016
+ *      Author: Kevin Kan
+ */
+
+#include "usefulVariables.h"
+
+void *dataFiller(void * sourceIn){
+
+==> Project02.c <==
+/*
+ ============================================================================
+ Name        : Project02.c
+ Author      : Kevin Kan
+ Version     : 1.0
+ Copyright   : 2016
+ Description : Using Threads to calculate net profits for shops and corporations
+ ============================================================================
+ */
+
+
+==> SuperviseThreads.c <==
+/*
+ * SuperviseThreads.c
+ *
+ *  Created on: Oct 20, 2016
+ *      Author: Kevin Kan
+ */
+
+#include "usefulVariables.h"
+
+int SuperviseThreads(int numObs, int numRegions, bool chatty ){

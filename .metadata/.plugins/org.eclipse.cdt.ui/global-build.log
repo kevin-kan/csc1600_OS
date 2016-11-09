@@ -1,48 +1,45 @@
-17:58:31 **** Incremental Build of configuration Debug for project Project02 ****
+17:26:43 **** Incremental Build of configuration Debug for project Project03 ****
 make all 
-Building file: ../src/SuperviseThreads.c
+Building file: ../src/LRU.c
 Invoking: Cygwin C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SuperviseThreads.d" -MT"src/SuperviseThreads.o" -o "src/SuperviseThreads.o" "../src/SuperviseThreads.c"
-Finished building: ../src/SuperviseThreads.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LRU.d" -MT"src/LRU.o" -o "src/LRU.o" "../src/LRU.c"
+Finished building: ../src/LRU.c
  
-Building target: Project02.exe
+Building target: Project03.exe
 Invoking: Cygwin C Linker
-gcc  -o "Project02.exe"  ./src/Project02.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o   
-Finished building target: Project02.exe
+gcc  -o "Project03.exe"  ./src/LRU.o ./src/Project03.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o ./src/dataSaver.o   
+Finished building target: Project03.exe
  
-17:58:34 **** Incremental Build of configuration Debug for project Project02 ****
+17:26:46 **** Incremental Build of configuration Debug for project Project03 ****
 make all 
-Building file: ../src/Project02.c
-Invoking: Cygwin C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Project02.d" -MT"src/Project02.o" -o "src/Project02.o" "../src/Project02.c"
-Finished building: ../src/Project02.c
- 
-Building target: Project02.exe
-Invoking: Cygwin C Linker
-gcc  -o "Project02.exe"  ./src/Project02.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o   
-Finished building target: Project02.exe
- 
-17:58:46 **** Incremental Build of configuration Debug for project Project02 ****
+make: Nothing to be done for 'all'.
+17:34:39 **** Incremental Build of configuration Debug for project Project03 ****
 make all 
-Building file: ../src/dataFiller.c
-Invoking: Cygwin C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dataFiller.d" -MT"src/dataFiller.o" -o "src/dataFiller.o" "../src/dataFiller.c"
-Finished building: ../src/dataFiller.c
- 
-Building target: Project02.exe
-Invoking: Cygwin C Linker
-gcc  -o "Project02.exe"  ./src/Project02.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o   
-Finished building target: Project02.exe
- 
-17:59:02 **** Incremental Build of configuration Debug for project Project02 ****
+make: Nothing to be done for 'all'.
+17:35:16 **** Incremental Build of configuration Debug for project Project03 ****
 make all 
-Building file: ../src/SuperviseThreads.c
+make: Nothing to be done for 'all'.
+17:37:26 **** Incremental Build of configuration Debug for project Project03 ****
+make all 
+Building file: ../src/Project03.c
 Invoking: Cygwin C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SuperviseThreads.d" -MT"src/SuperviseThreads.o" -o "src/SuperviseThreads.o" "../src/SuperviseThreads.c"
-Finished building: ../src/SuperviseThreads.c
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Project03.d" -MT"src/Project03.o" -o "src/Project03.o" "../src/Project03.c"
+Finished building: ../src/Project03.c
  
-Building target: Project02.exe
+Building target: Project03.exe
 Invoking: Cygwin C Linker
-gcc  -o "Project02.exe"  ./src/Project02.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o   
-Finished building target: Project02.exe
+gcc  -o "Project03.exe"  ./src/LRU.o ./src/Project03.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o ./src/dataSaver.o   
+Finished building target: Project03.exe
+ 
+17:39:25 **** Incremental Build of configuration Debug for project Project03 ****
+make all 
+Building file: ../src/Project03.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Project03.d" -MT"src/Project03.o" -o "src/Project03.o" "../src/Project03.c"
+Finished building: ../src/Project03.c
+ 
+Building target: Project03.exe
+Invoking: Cygwin C Linker
+gcc  -o "Project03.exe"  ./src/LRU.o ./src/Project03.o ./src/SuperviseThreads.o ./src/accountingFunction.o ./src/dataFiller.o ./src/dataSaver.o   
+Finished building target: Project03.exe
  
