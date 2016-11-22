@@ -1,0 +1,20 @@
+23:48:26 **** Incremental Build of configuration Debug for project Project04 ****
+make all 
+Building file: ../src/FileTest.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FileTest.d" -MT"src/FileTest.o" -o "src/FileTest.o" "../src/FileTest.c"
+Finished building: ../src/FileTest.c
+ 
+Building file: ../src/Project04.c
+Invoking: Cygwin C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Project04.d" -MT"src/Project04.o" -o "src/Project04.o" "../src/Project04.c"
+Finished building: ../src/Project04.c
+ 
+Building target: Project04.exe
+Invoking: Cygwin C Linker
+gcc  -o "Project04.exe"  ./src/FileTest.o ./src/Project04.o   
+Finished building target: Project04.exe
+ 
+
+23:48:27 Build Finished (took 841ms)
+
