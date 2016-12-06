@@ -1,0 +1,80 @@
+==> Project05Header.h <==
+/*
+ * Project05Header.h
+ *
+ *  Created on: Dec 2, 2016
+ *      Author: Kevin Kan
+ *
+ *  Description: This file contains functions declarations and libraries used in the Project.
+ */
+
+#ifndef PROJECT05HEADER_H_
+
+==> Elevator.c <==
+/*
+ * Elevator.c
+ *
+ *  Created on: Dec 2, 2016
+ *      Author: Kevin Kan
+ *
+ *  Description: This Elevator algorithm starts at 500, and visits all cylinders
+ *  			greater than 500 in ascending order, then all cylinders less
+ *  			than 500 in descending order.
+ *  			The algorithm is first sorted with mergesort, a recursive sorting
+
+==> FCFS.c <==
+/*
+ * FCFS.c
+ *
+ *  Created on: Dec 2, 2016
+ *      Author: Kevin Kan
+ *
+ *  Description: The First Come First Serve Algorithm traverses the cylinders at
+ *  			a "first come first serve" basis, where the first item in is the
+ *  			first item viewed.
+ */
+
+==> MergeSort.c <==
+/*
+ * MergeSort.c
+ *
+ *  Created on: Nov 16, 2016
+ *      Author: Kevin
+ *
+ * 	Description: This is the definitions for mergesort, adapted from my mergesort written in C++ class.
+ * 			Mergesort works by recursively sorting the left half and the right half of the dataset
+ * 			with mergesort again, then merging the sorted pieces back together.
+ * 			The Big-O Complexity of Mergesort is O(nlogn).
+
+==> Project05.c <==
+/*
+
+ ============================================================================
+ 
+Name        : Project05.c
+ 
+Author      : Kevin Kan
+ 
+Version     : 1.0
+ Copyright   : 2016
+ 
+Description : Disk Arm Scheduling
+
+ 	 	In this main file, the double array of integers is created,
+
+		and then each scheduling algorithm is run.
+ 
+ ============================================================================
+
+
+==> SST.c <==
+/*
+ * SST.c
+ *
+ *  Created on: Dec 2, 2016
+ *      Author: Kevin Kan
+ *
+ *  Description: The Shortest Seek Time First algorithm is a direct improvement
+ *  			off the FCFS algorithm. The drive keeps locates which request is
+ *  			closest to the current position of the head, and services that
+ *  			request first.

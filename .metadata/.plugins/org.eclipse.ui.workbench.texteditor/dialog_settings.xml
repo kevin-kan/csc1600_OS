@@ -2,21 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="return" key="selection"/>
+		<item value="tempnum" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="exit"/>
-			<item value="dataSaver"/>
-			<item value="dataFiller"/>
-			<item value="max"/>
-			<item value="chatty1"/>
-			<item value="MAX_CMDS"/>
+			<item value="tempnum"/>
+			<item value="temp"/>
+			<item value="sstarray"/>
+			<item value="arraydist"/>
+			<item value="algorithmaverage"/>
+			<item value="algorithmsum"/>
+			<item value="armstate"/>
+			<item value="[i][j]"/>
 		</list>
 		<list key="replacehistory">
-			<item value="return"/>
+			<item value="temp"/>
+			<item value="tempArr"/>
+			<item value="distArray"/>
+			<item value="averageDist"/>
+			<item value="totalSum"/>
+			<item value="armState"/>
+			<item value="[rows][cols]"/>
+			<item value="nextLine"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
